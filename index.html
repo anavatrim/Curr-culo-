@@ -10,7 +10,14 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
-<body>
+
+<style>
+.pagina{
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+</style>
+
+<body class="pagina">
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
 <div class="container text-white">Currículo</a>
@@ -52,45 +59,42 @@ anavatrim@hotmail.com
 <p>Github <a href="https://github.com/Vatrim?tab=repositories"><i class="bi bi-github"></i></a>
 </p>
 </header>
-
-<section id="objetivo" class="mb-4">
-<h2 class="text-dark ps-2 pt-1 fs-2 pt-5 py-5"><strong>Objetivo</strong></h2>
-
-<p>Estou em busca de uma oportunidade de estágio onde possa aplicar meus conhecimentos
-teóricos e práticos, adquirir novas habilidades e contribuir para o crescimento 
-da empresa. Estou em processo de transição de carreira e tenho grande interesse pela área.</p>
-
-<div id="habilidades">
-<h1 class="d-flex text-start text-dark ps-2 pt-1 fs-2 pt-5 py-3">Habilidades</h1>
-
-
-
-<ul class="text-start">
-
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-<li>React</li>
-<li>Bootstrap</li>
-<li>Python</li>
-<li>Photoshop</li>
-</ul>
-
+<div class="container">
+<div class="row">
+<section id="habilidades" class="col-md-6 mb-4">
+<div class="card shadow-sm" style="min-height: 300px;">
+<div class="card-header bg-primary text-white">
+<h3><strong>Habilidades</strong></h3>
 </div>
-
-<div id="idiomas">
-<h1 class="d-flex text-start text-dark ps-2 pt-1 fs-2 pt-5 py-3">Idiomas</h1>
-
-
-<ul class="text-start">
-
-<li>Português: Nativo</li>
-<li>Inglês: Intermediário</li>
+<div class="card-body">
+<ul class="list-unstyled">
+<li><i class="bi bi-check-circle text-success"></i> HTML</li>
+<li><i class="bi bi-check-circle text-success"></i> CSS</li>
+<li><i class="bi bi-check-circle text-success"></i> JavaScript</li>
+<li><i class="bi bi-check-circle text-success"></i> React</li>
+<li><i class="bi bi-check-circle text-success"></i> Bootstrap</li>
+<li><i class="bi bi-check-circle text-success"></i> Python</li>
+<li><i class="bi bi-check-circle text-success"></i> Photoshop</li>
 </ul>
-
 </div>
-
+</div>
 </section>
+
+<section id="idiomas" class="col-md-6 mb-4">
+<div class="card shadow-sm" style="min-height: 300px;">
+<div class="card-header bg-primary text-white">
+<h3><strong>Idiomas</strong></h3>
+</div>
+<div class="card-body">
+<ul class="list-unstyled">
+<li><i class="bi bi-check-circle text-success"></i> Português: Nativo</li>
+<li><i class="bi bi-check-circle text-success"></i> Inglês: Intermediário</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+</div>
 
 <section id="formação" class="mb-4">
 <h1 class="text-dark ps-2 pt-1 fs-2 pt-5 py-5"><strong>Formação</strong></h1>
@@ -135,25 +139,23 @@ da empresa. Estou em processo de transição de carreira e tenho grande interess
 
 </section>
 
-
 <section>
-
 <h1 class="text-dark ps-2 pt-1 fs-2 pt-5 py-5" id="projetos"><strong>Projetos</strong></h1>
 <div class="container">
-<div class="row">
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4"> 
 
-<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+<div class="col">
 <div class="card border-primary mb-4 h-100">
 <img src="imagem/image.01.png" class="card-img-top" alt="calculadora">
 <div class="card-body d-flex flex-column">
 <h5 class="card-title text-center">Projeto.1</h5>
 <p class="card-text text-center">Uma calculadora desenvolvida com HTML, CSS e JavaScript.</p>
-<a href="https://teste-4-two.vercel.app/" class="btn btn-primary mt-auto" target="_blank">Clique aqui</a>
+<a href="https://calculadorasb.vercel.app/" class="btn btn-primary mt-auto" target="_blank">Clique aqui</a>
 </div>
 </div>
 </div>
 
-<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+<div class="col">
 <div class="card border-primary mb-4 h-100">
 <img src="imagem/image.02.png" class="card-img-top" alt="bootstrap.5">
 <div class="card-body d-flex flex-column">
@@ -164,7 +166,7 @@ da empresa. Estou em processo de transição de carreira e tenho grande interess
 </div>
 </div>
 
-<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+<div class="col">
 <div class="card border-primary mb-4 h-100">
 <img src="imagem/image.03.png" class="card-img-top" alt="agência-XYZ">
 <div class="card-body d-flex flex-column">
@@ -175,13 +177,24 @@ da empresa. Estou em processo de transição de carreira e tenho grande interess
 </div>
 </div>
 
-<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+<div class="col">
 <div class="card border-primary mb-4 h-100">
 <img src="imagem/image4.png" class="card-img-top" alt="agência-XYZ">
 <div class="card-body d-flex flex-column">
 <h5 class="card-title text-center">Projeto.4</h5>
 <p class="card-text text-center">Foi criado um site para a empresa Motopopa.</p>
 <a href="https://motopopa.vercel.app/" class="btn btn-primary mt-auto" target="_blank">Clique aqui</a>
+</div>
+</div>
+</div>
+
+<div class="col">
+<div class="card border-primary mb-4 h-100">
+<img src="imagem/Clínica.png" class="card-img-top" alt="agência-XYZ">
+<div class="card-body d-flex flex-column">
+<h5 class="card-title text-center">Projeto.5</h5>
+<p class="card-text text-center">Foi criado um site para a empresa Clínica-cuidar.</p>
+<a href="https://cuidarclinica.vercel.app/" class="btn btn-primary mt-auto" target="_blank">Clique aqui</a>
 </div>
 </div>
 </div>
