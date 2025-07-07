@@ -1,588 +1,576 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ana Cláudia Vatrim | Desenvolvedora Full Stack</title>
-    <meta name="description" content="Desenvolvedora Full Stack com foco em Front-End e UX/UI. Especializada em React, Next.js e design responsivo.">
-    
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍💻</text></svg>">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ana Cláudia Vatrim | Desenvolvedora Full Stack</title>
+<meta name="description" content="Desenvolvedora Full Stack com foco em Front-End e UX/UI. Especializada em React, Next.js e design responsivo.">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍💻</text></svg>">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">DEV</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#home">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experiência</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+<a class="navbar-brand" href="#">DEV</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link active" href="#home">Início</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+<li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+<li class="nav-item"><a class="nav-link" href="#experience">Experiência</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+</ul>
+</div>
+</div>
+</nav>
 
-    <header id="home" class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h4 class="text-primary">Olá, eu sou</h4>
-                    <h1>Ana Cláudia Vatrim</h1>
-                    <h2 class="text-gradient">Desenvolvedora Full Stack</h2>
-                    <p class="lead">Criando experiências digitais incríveis com foco em performance, acessibilidade e design responsivo.</p>
-                    <div class="hero-buttons mt-4">
-                        <a href="#contact" class="btn btn-primary me-3">Entrar em Contato</a>
-                        <a href="#projects" class="btn btn-outline-primary">Ver Projetos</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center">
-                    <div class="hero-image">
-                        <div class="hero-shape"></div>
-                        <img src="https://ui-avatars.com/api/?name=Ana+Claudia&background=4F46E5&color=fff&size=400" alt="Ana Cláudia Vatrim" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+<header id="home" class="hero-section">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6">
+<h4 class="text-primary">Olá, eu sou</h4>
+<h1>Ana Cláudia Vatrim</h1>
+<h2 class="text-gradient">Desenvolvedora Full Stack</h2>
+<p class="lead">Criando experiências digitais incríveis com foco em performance, acessibilidade e design responsivo.</p>
+<div class="hero-buttons mt-4">
+<a href="#contact" class="btn btn-primary me-3">Entrar em Contato</a>
+<a href="#projects" class="btn btn-outline-primary">Ver Projetos</a>
+</div>
+</div>
+<div class="col-lg-6 text-center">
+<div class="hero-image">
+<div class="hero-shape"></div>
+<img src="https://ui-avatars.com/api/?name=Ana+Claudia&background=4F46E5&color=fff&size=400" alt="Ana Cláudia Vatrim" class="img-fluid">
+</div>
+</div>
+</div>
+</div>
+</header>
 
-    <section id="about" class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="section-title text-start">
-                        <h2>Sobre Mim</h2>
-                        <p class="lead">
-                            Desenvolvedora Full Stack em formação, com foco em Front-End e UX/UI. Minha transição da área de educação para tecnologia me proporcionou uma visão única, combinando habilidades de ensino com desenvolvimento de soluções digitais centradas no usuário.
-                        </p>
-                        <p>
-                            Com experiência em projetos que integram HTML, CSS, JavaScript, TypeScript, React, Next.js, Node.js, Nest.js, PostgreSQL e estilização com Tailwind, Shadcn e Bootstrap, busco criar experiências digitais que não apenas impressionem visualmente, mas que também sejam intuitivas, acessíveis e de alto desempenho.
-                        </p>
-                        <div class="mt-4">
-                            <a href="#contact" class="btn btn-primary me-3">Entre em Contato</a>
-                            <a href="#projects" class="btn btn-outline-primary">Meus Projetos</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="skills-chart p-4">
-                        <div class="skill-item mb-4">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span>HTML5 & CSS3</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="progress" style="height: 10px;">
-                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item mb-4">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span>JavaScript</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="progress" style="height: 10px;">
-                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item mb-4">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span>React & Next.js</span>
-                                <span>75%</span>
-                            </div>
-                            <div class="progress" style="height: 10px;">
-                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item mb-4">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span>UI/UX Design</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="progress" style="height: 10px;">
-                                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="about" class="py-5">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6">
+<div class="section-title text-start">
+<h2>Sobre Mim</h2>
+<p class="lead">
+Desenvolvedora Full Stack em formação, com foco em Front-End e UX/UI. Minha transição da área de educação para tecnologia me proporcionou uma visão única, combinando habilidades de ensino com desenvolvimento de soluções digitais centradas no usuário.
+</p>
+<p>
+Com experiência em projetos que integram HTML, CSS, JavaScript, TypeScript, React, Next.js, Node.js, Nest.js, PostgreSQL e estilização com Tailwind, Shadcn e Bootstrap, busco criar experiências digitais que não apenas impressionem visualmente, mas que também sejam intuitivas, acessíveis e de alto desempenho.
+</p>
+<div class="mt-4">
+<a href="#contact" class="btn btn-primary me-3">Entre em Contato</a>
+<a href="#projects" class="btn btn-outline-primary">Meus Projetos</a>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="skills-chart p-4">
+<div class="skill-item mb-4">
+<div class="d-flex justify-content-between mb-2">
+<span>HTML5 & CSS3</span>
+<span>90%</span>
+</div>
+<div class="progress" style="height: 10px;">
+<div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+</div>
+<div class="skill-item mb-4">
+<div class="d-flex justify-content-between mb-2">
+<span>JavaScript</span>
+<span>80%</span>
+</div>
+<div class="progress" style="height: 10px;">
+<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+</div>
+<div class="skill-item mb-4">
+<div class="d-flex justify-content-between mb-2">
+<span>React & Next.js</span>
+<span>75%</span>
+</div>
+<div class="progress" style="height: 10px;">
+<div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+</div>
+<div class="skill-item mb-4">
+<div class="d-flex justify-content-between mb-2">
+<span>UI/UX Design</span>
+<span>85%</span>
+</div>
+<div class="progress" style="height: 10px;">
+<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-    <section id="skills" class="py-5 bg-light">
-        <div class="container">
-            <div class="section-title">
-                <h2>Habilidades & Tecnologias</h2>
-                <p class="lead">Tecnologias e ferramentas que utilizo no meu dia a dia</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-6 col-md-3 text-center">
-                    <div class="skill-card p-4 rounded-3 bg-white shadow-sm">
-                        <i class="devicon-html5-plain colored fa-3x mb-3"></i>
-                        <h5>HTML5</h5>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <div class="skill-card p-4 rounded-3 bg-white shadow-sm">
-                        <i class="devicon-css3-plain colored fa-3x mb-3"></i>
-                        <h5>CSS3</h5>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <div class="skill-card p-4 rounded-3 bg-white shadow-sm">
-                        <i class="devicon-javascript-plain colored fa-3x mb-3"></i>
-                        <h5>JavaScript</h5>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <div class="skill-card p-4 rounded-3 bg-white shadow-sm">
-                        <i class="devicon-typescript-plain colored fa-3x mb-3"></i>
-                        <h5>TypeScript</h5>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <div class="skill-card p-4 rounded-3 bg-white shadow-sm">
-                        <i class="devicon-react-original colored fa-3x mb-3"></i>
-                        <h5>React</h5>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <div class="skill-card p-4 rounded-3 bg-white shadow-sm">
-                        <i class="devicon-nextjs-original colored fa-3x mb-3"></i>
-                        <h5>Next.js</h5>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <div class="skill-card p-4 rounded-3 bg-white shadow-sm">
-                        <i class="devicon-nodejs-plain colored fa-3x mb-3"></i>
-                        <h5>Node.js</h5>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <div class="skill-card p-4 rounded-3 bg-white shadow-sm">
-                        <i class="devicon-nestjs-plain colored fa-3x mb-3"></i>
-                        <h5>Nest.js</h5>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <div class="skill-card p-4 rounded-3 bg-white shadow-sm">
-                        <i class="devicon-postgresql-plain colored fa-3x mb-3"></i>
-                        <h5>PostgreSQL</h5>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <div class="skill-card p-4 rounded-3 bg-white shadow-sm">
-                        <i class="devicon-tailwindcss-plain colored fa-3x mb-3"></i>
-                        <h5>Tailwind CSS</h5>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <div class="skill-card p-4 rounded-3 bg-white shadow-sm">
-                        <i class="devicon-bootstrap-plain colored fa-3x mb-3"></i>
-                        <h5>Bootstrap</h5>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <div class="skill-card p-4 rounded-3 bg-white shadow-sm">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 0.75rem;">
-                            <path d="M12 2L2 8L12 14L22 8L12 2Z" fill="currentColor"/>
-                            <path d="M2 12L12 18L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M2 16L12 22L22 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <h5>Shadcn/UI</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="skills" class="py-5 bg-light">
+<div class="container">
+<div class="section-title">
+<h2>Habilidades & Tecnologias</h2>
+<p class="lead">Tecnologias e ferramentas que utilizo no meu dia a dia</p>
+</div>
+<div class="row g-4">
+<div class="col-6 col-md-3 text-center">
+<div class="skill-card p-4 rounded-3 bg-white shadow-sm">
+<i class="devicon-html5-plain colored fa-3x mb-3"></i>
+<h5>HTML5</h5>
+</div>
+</div>
+<div class="col-6 col-md-3 text-center">
+<div class="skill-card p-4 rounded-3 bg-white shadow-sm">
+<i class="devicon-css3-plain colored fa-3x mb-3"></i>
+<h5>CSS3</h5>
+</div>
+</div>
+<div class="col-6 col-md-3 text-center">
+<div class="skill-card p-4 rounded-3 bg-white shadow-sm">
+<i class="devicon-javascript-plain colored fa-3x mb-3"></i>
+<h5>JavaScript</h5>
+</div>
+</div>
+<div class="col-6 col-md-3 text-center">
+<div class="skill-card p-4 rounded-3 bg-white shadow-sm">
+<i class="devicon-typescript-plain colored fa-3x mb-3"></i>
+<h5>TypeScript</h5>
+</div>
+</div>
+<div class="col-6 col-md-3 text-center">
+<div class="skill-card p-4 rounded-3 bg-white shadow-sm">
+<i class="devicon-react-original colored fa-3x mb-3"></i>
+<h5>React</h5>
+</div>
+</div>
+<div class="col-6 col-md-3 text-center">
+<div class="skill-card p-4 rounded-3 bg-white shadow-sm">
+<i class="devicon-nextjs-original colored fa-3x mb-3"></i>
+<h5>Next.js</h5>
+</div>
+</div>
+<div class="col-6 col-md-3 text-center">
+<div class="skill-card p-4 rounded-3 bg-white shadow-sm">
+<i class="devicon-nodejs-plain colored fa-3x mb-3"></i>
+<h5>Node.js</h5>
+</div>
+</div>
+<div class="col-6 col-md-3 text-center">
+<div class="skill-card p-4 rounded-3 bg-white shadow-sm">
+<i class="devicon-nestjs-plain colored fa-3x mb-3"></i>
+<h5>Nest.js</h5>
+</div>
+</div>
+<div class="col-6 col-md-3 text-center">
+<div class="skill-card p-4 rounded-3 bg-white shadow-sm">
+<i class="devicon-postgresql-plain colored fa-3x mb-3"></i>
+<h5>PostgreSQL</h5>
+</div>
+</div>
+<div class="col-6 col-md-3 text-center">
+<div class="skill-card p-4 rounded-3 bg-white shadow-sm">
+<i class="devicon-tailwindcss-plain colored fa-3x mb-3"></i>
+<h5>Tailwind CSS</h5>
+</div>
+</div>
+<div class="col-6 col-md-3 text-center">
+<div class="skill-card p-4 rounded-3 bg-white shadow-sm">
+<i class="devicon-bootstrap-plain colored fa-3x mb-3"></i>
+<h5>Bootstrap</h5>
+</div>
+</div>
+<div class="col-6 col-md-3 text-center">
+<div class="skill-card p-4 rounded-3 bg-white shadow-sm">
+<svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 0.75rem;">
+<path d="M12 2L2 8L12 14L22 8L12 2Z" fill="currentColor"/>
+<path d="M2 12L12 18L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 16L12 22L22 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<h5>Shadcn/UI</h5>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-    <section id="experience" class="py-5">
-        <div class="container">
-            <div class="section-title">
-                <h2>Experiência Profissional</h2>
-                <p class="lead">Minha jornada profissional e conquistas</p>
-            </div>
-            
-            <div class="timeline">
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <h3>Psicopedagoga</h3>
-                        <span class="timeline-date">out/2024 - Presente</span>
-                        <h4>Clínica Cuidar</h4>
-                        <p>Atendimento clínico a crianças e adolescentes com dificuldades de aprendizagem, utilizando abordagens personalizadas para desenvolvimento cognitivo e emocional.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <h3>Professora</h3>
-                        <span class="timeline-date">abr/2024 - out/2024</span>
-                        <h4>Colégio Dom Bosco</h4>
-                        <p>Ministrei aulas para o ensino fundamental, desenvolvendo planejamentos pedagógicos e atividades interativas para engajar os alunos no processo de aprendizagem.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <h3>Regente de Turma</h3>
-                        <span class="timeline-date">2022 - 2023</span>
-                        <h4>C.E.I. Meu Mundo</h4>
-                        <p>Responsável por planejar e executar atividades pedagógicas para educação infantil, promovendo o desenvolvimento integral das crianças.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <h3>Estagiária em Educação</h3>
-                        <span class="timeline-date">2019 - 2021</span>
-                        <h4>E.M. Professor Antonio Carlos Velasque</h4>
-                        <p>Auxílio na coordenação e direção pedagógica, atuando no suporte a professores e alunos do ensino fundamental.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="experience" class="py-5">
+<div class="container">
+<div class="section-title">
+<h2>Experiência Profissional</h2>
+<p class="lead">Minha jornada profissional e conquistas</p>
+</div>
 
-    <section id="education" class="py-5 bg-light">
-        <div class="container">
-            <div class="section-title">
-                <h2>Formação Acadêmica</h2>
-                <p class="lead">Minha jornada educacional</p>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="education-card p-4 bg-white rounded-3 h-100">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fas fa-graduation-cap fa-2x text-primary me-3"></i>
-                            <h4 class="mb-0">Análise e Desenvolvimento de Sistemas</h4>
-                        </div>
-                        <h5>Unifamma - Centro Universitário de Maringá</h5>
-                        <p class="text-muted mb-2">2023 - 2025</p>
-                        <p class="mb-0">Formação em desenvolvimento de software com foco em soluções tecnológicas inovadoras.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-3">
-                    <div class="education-card p-4 bg-white rounded-3 h-100">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fas fa-graduation-cap fa-2x text-primary me-3"></i>
-                            <h4 class="mb-0">Psicopedagogia</h4>
-                        </div>
-                        <h5>Unicesumar</h5>
-                        <p class="text-muted mb-2">2023 - 2024</p>
-                        <p class="mb-0">Pós-graduação em Psicopedagogia Clínica e Institucional.</p>
-                    </div>
-                </div>
-                
-                <!-- Education Item 3 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="education-card p-4 bg-white rounded-3 h-100">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fas fa-graduation-cap fa-2x text-primary me-3"></i>
-                            <h4 class="mb-0">Pedagogia</h4>
-                        </div>
-                        <h5>Unifamma - Centro Universitário de Maringá</h5>
-                        <p class="text-muted mb-2">2019 - 2022</p>
-                        <p class="mb-0">Graduação em Pedagogia com ênfase em Educação Infantil e Anos Iniciais.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-3">
-                    <div class="education-card p-4 bg-white rounded-3 h-100">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fas fa-language fa-2x text-primary me-3"></i>
-                            <h4 class="mb-0">Inglês</h4>
-                        </div>
-                        <h5>Cebrac</h5>
-                        <p class="text-muted mb-2">2024 - 2026</p>
-                        <p class="mb-0">Curso de inglês focado em conversação e negócios.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="timeline">
+<div class="timeline-item left">
+<div class="timeline-content">
+<h3>Psicopedagoga</h3>
+<span class="timeline-date">out/2024 - Presente</span>
+<h4>Clínica Cuidar</h4>
+<p>Atendimento clínico a crianças e adolescentes com dificuldades de aprendizagem, utilizando abordagens personalizadas para desenvolvimento cognitivo e emocional.</p>
+</div>
+</div>
 
-    <section id="group-projects" class="py-5 bg-white">
-        <div class="container">
-            <div class="section-title text-center">
-                <h2>Projetos em Grupo</h2>
-                <p class="lead">Trabalhos colaborativos desenvolvidos em equipe</p>
-            </div>
-            
-            <div class="row justify-content-center mb-5">
-                <div class="col-lg-10">
-                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                         alt="Equipe de Desenvolvimento" 
-                         class="img-fluid rounded-3 shadow" 
-                         style="width: 100%; height: 300px; object-fit: cover;">
-                </div>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="project-card h-100">
-                        <div class="project-img">
-                            <img src="imagem/Mono1.png" alt="Mono Payment System" class="img-fluid">
-                        </div>
-                        <div class="project-content">
-                            <h3>Mono Payment System</h3>
-                            <p>Projeto colaborativo de um sistema de pagamento em monorepo (TurboRepo), desenvolvido com Next.js e NestJS. O projeto visa criar uma solução escalável e eficiente para processamento de pagamentos.</p>
-                            <div class="project-tags">
-                                <span class="tag">Next.js</span>
-                                <span class="tag">NestJS</span>
-                                <span class="tag">Monorepo</span>
-                                <span class="tag">TurboRepo</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">Tailwind</span>
-                                <span class="tag">shadcn/ui</span>
-                                <span class="tag">pnpm</span>
-                            </div>
-                            <a href="#" class="btn btn-outline-primary mt-3">Em Desenvolvimento</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6">
-                    <div class="project-card h-100">
-                        <div class="project-img">
-                            <img src="imagem/Mono2.png" alt="Sistema de Gestão de Clientes" class="img-fluid">
-                        </div>
-                        <div class="project-content">
-                            <h3>Sistema de Gestão de Clientes (CRM)</h3>
-                            <p>Plataforma de CRM com integração a WhatsApp, SMS e Facebook Messenger, utilizando IA generativa para atendimento. Módulos incluem autenticação, chat, automação de atendimento, campanhas e configurações do sistema.</p>
-                            <div class="project-tags">
-                                <span class="tag">React</span>
-                                <span class="tag">Node.js</span>
-                                <span class="tag">IA Generativa</span>
-                                <span class="tag">WhatsApp API</span>
-                                <span class="tag">MongoDB</span>
-                                <span class="tag">REST API</span>
-                            </div>
-                            <a href="#" class="btn btn-outline-primary mt-3">Em Desenvolvimento</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="timeline-item right">
+<div class="timeline-content">
+<h3>Professora</h3>
+<span class="timeline-date">abr/2024 - out/2024</span>
+<h4>Colégio Dom Bosco</h4>
+<p>Ministrei aulas para o ensino fundamental, desenvolvendo planejamentos pedagógicos e atividades interativas para engajar os alunos no processo de aprendizagem.</p>
+</div>
+</div>
 
-    <section id="projects" class="py-5">
-        <div class="container">
-            <div class="section-title">
-                <h2>Projetos Recentes</h2>
-                <p class="lead">Alguns dos meus trabalhos mais recentes</p>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="imagem/image.01.png" alt="Calculadora">
-                        </div>
-                        <div class="project-content">
-                            <h3>Calculadora Interativa</h3>
-                            <p>Uma calculadora funcional desenvolvida com HTML, CSS e JavaScript puro, com interface responsiva e design moderno.</p>
-                            <div class="project-tags">
-                                <span class="tag">HTML</span>
-                                <span class="tag">CSS</span>
-                                <span class="tag">JavaScript</span>
-                            </div>
-                            <a href="https://calculadorasb.vercel.app/" class="btn btn-outline-primary mt-auto align-self-start" target="_blank">Ver Projeto</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="imagem/projet.png" alt="Portfólio">
-                        </div>
-                        <div class="project-content">
-                            <h3>Portfólio Pessoal</h3>
-                            <p>Site pessoal desenvolvido para apresentar habilidades, experiência e projetos de forma profissional e criativa.</p>
-                            <div class="project-tags">
-                                <span class="tag">HTML</span>
-                                <span class="tag">CSS</span>
-                                <span class="tag">Next.js</span>
-                                <span class="tag">JavaScript</span>
-                            </div>
-                            <a href="https://nextjs-portifolio-eosin.vercel.app" class="btn btn-outline-primary mt-auto align-self-start" target="_blank">Ver Projeto</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="imagem/image4.png" alt="Motopopa">
-                        </div>
-                        <div class="project-content">
-                            <h3>Site Motopopa</h3>
-                            <p>Landing page desenvolvida para uma empresa de motopeças, com design responsivo e otimizado para conversão.</p>
-                            <div class="project-tags">
-                                <span class="tag">HTML</span>
-                                <span class="tag">CSS</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">Bootstrap</span>
-                            </div>
-                            <a href="https://motopopa.vercel.app/" class="btn btn-outline-primary mt-auto align-self-start" target="_blank">Ver Projeto</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-5">
-                <a href="https://github.com/anavatrim" class="btn btn-primary" target="_blank">
-                    <i class="fab fa-github me-2"></i> Ver Mais Projetos no GitHub
-                </a>
-            </div>
-        </div>
-    </section>
+<div class="timeline-item left">
+<div class="timeline-content">
+<h3>Regente de Turma</h3>
+<span class="timeline-date">2022 - 2023</span>
+<h4>C.E.I. Meu Mundo</h4>
+<p>Responsável por planejar e executar atividades pedagógicas para educação infantil, promovendo o desenvolvimento integral das crianças.</p>
+</div>
+</div>
 
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
-            <div class="section-title">
-                <h2>Entre em Contato</h2>
-                <p class="lead">Vamos trabalhar juntos!</p>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-lg-5">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Email</h4>
-                                <a href="mailto:anavatrim@hotmail.com">anavatrim@hotmail.com</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Telefone</h4>
-                                <a href="tel:+5544998984507">(44) 99898-4507</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fab fa-whatsapp"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>WhatsApp</h4>
-                                <a href="https://wa.me/5544998984507" target="_blank">Enviar mensagem</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Localização</h4>
-                                <p>Maringá, PR - Brasil</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="social-links mt-5">
-                        <a href="https://github.com/anavatrim" class="social-link" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/" class="social-link" target="_blank">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://www.instagram.com/" class="social-link" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://twitter.com/" class="social-link" target="_blank">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="col-lg-7">
-                    <form class="contact-form">
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control" placeholder="Seu Nome" required>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <input type="email" class="form-control" placeholder="Seu Email" required>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Assunto" required>
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" placeholder="Sua Mensagem" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <footer class="footer">
-        <div class="container">
-            <div class="text-center">
-                <h3>Ana Cláudia Vatrim</h3>
-                <p class="mb-4">Desenvolvedora Full Stack | Designer UX/UI</p>
-                <div class="social-links">
-                    <a href="https://github.com/anavatrim" class="social-link" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/" class="social-link" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://www.instagram.com/" class="social-link" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://twitter.com/" class="social-link" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://api.whatsapp.com/send?phone=5544998984507" class="social-link" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </div>
-                <div class="copyright">
-                    &copy; <span id="current-year">2024</span> Ana Cláudia Vatrim. Todos os direitos reservados.
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-    <!-- Bootstrap JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Custom JS -->
-    <script src="js/script.js" defer></script>
+<div class="timeline-item right">
+<div class="timeline-content">
+<h3>Estagiária em Educação</h3>
+<span class="timeline-date">2019 - 2021</span>
+<h4>E.M. Professor Antonio Carlos Velasque</h4>
+<p>Auxílio na coordenação e direção pedagógica, atuando no suporte a professores e alunos do ensino fundamental.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="education" class="py-5 bg-light">
+<div class="container">
+<div class="section-title">
+<h2>Formação Acadêmica</h2>
+<p class="lead">Minha jornada educacional</p>
+</div>
+
+<div class="row g-4">
+<div class="col-md-6 col-lg-3">
+<div class="education-card p-4 bg-white rounded-3 h-100">
+<div class="d-flex align-items-center mb-3">
+<i class="fas fa-graduation-cap fa-2x text-primary me-3"></i>
+<h4 class="mb-0">Análise e Desenvolvimento de Sistemas</h4>
+</div>
+<h5>Unifamma - Centro Universitário de Maringá</h5>
+<p class="text-muted mb-2">2023 - 2025</p>
+<p class="mb-0">Formação em desenvolvimento de software com foco em soluções tecnológicas inovadoras.</p>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-3">
+<div class="education-card p-4 bg-white rounded-3 h-100">
+<div class="d-flex align-items-center mb-3">
+<i class="fas fa-graduation-cap fa-2x text-primary me-3"></i>
+<h4 class="mb-0">Psicopedagogia</h4>
+</div>
+<h5>Unicesumar</h5>
+<p class="text-muted mb-2">2023 - 2024</p>
+<p class="mb-0">Pós-graduação em Psicopedagogia Clínica e Institucional.</p>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-3">
+<div class="education-card p-4 bg-white rounded-3 h-100">
+<div class="d-flex align-items-center mb-3">
+<i class="fas fa-graduation-cap fa-2x text-primary me-3"></i>
+<h4 class="mb-0">Pedagogia</h4>
+</div>
+<h5>Unifamma - Centro Universitário de Maringá</h5>
+<p class="text-muted mb-2">2019 - 2022</p>
+<p class="mb-0">Graduação em Pedagogia com ênfase em Educação Infantil e Anos Iniciais.</p>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-3">
+<div class="education-card p-4 bg-white rounded-3 h-100">
+<div class="d-flex align-items-center mb-3">
+<i class="fas fa-language fa-2x text-primary me-3"></i>
+<h4 class="mb-0">Inglês</h4>
+</div>
+<h5>Cebrac</h5>
+<p class="text-muted mb-2">2024 - 2026</p>
+<p class="mb-0">Curso de inglês focado em conversação e negócios.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="group-projects" class="py-5 bg-white">
+<div class="container">
+<div class="section-title text-center">
+<h2>Projetos em Grupo</h2>
+<p class="lead">Trabalhos colaborativos desenvolvidos em equipe</p>
+</div>
+
+<div class="row justify-content-center mb-5">
+<div class="col-lg-10">
+<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+alt="Equipe de Desenvolvimento" 
+class="img-fluid rounded-3 shadow" 
+style="width: 100%; height: 300px; object-fit: cover;">
+</div>
+</div>
+
+<div class="row g-4">
+<div class="col-md-6">
+<div class="project-card h-100">
+<div class="project-img">
+<img src="imagem/Mono1.png" alt="Mono Payment System" class="img-fluid">
+</div>
+<div class="project-content">
+<h3>Mono Payment System</h3>
+<p>Projeto colaborativo de um sistema de pagamento em monorepo (TurboRepo), desenvolvido com Next.js e NestJS. O projeto visa criar uma solução escalável e eficiente para processamento de pagamentos.</p>
+<div class="project-tags">
+<span class="tag">Next.js</span>
+<span class="tag">NestJS</span>
+<span class="tag">Monorepo</span>
+<span class="tag">TurboRepo</span>
+<span class="tag">JavaScript</span>
+<span class="tag">Tailwind</span>
+<span class="tag">shadcn/ui</span>
+<span class="tag">pnpm</span>
+</div>
+<a href="#" class="btn btn-outline-primary mt-3">Em Desenvolvimento</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="project-card h-100">
+<div class="project-img">
+<img src="imagem/Mono2.png" alt="Sistema de Gestão de Clientes" class="img-fluid">
+</div>
+<div class="project-content">
+<h3>Sistema de Gestão de Clientes (CRM)</h3>
+<p>Plataforma de CRM com integração a WhatsApp, SMS e Facebook Messenger, utilizando IA generativa para atendimento. Módulos incluem autenticação, chat, automação de atendimento, campanhas e configurações do sistema.</p>
+<div class="project-tags">
+<span class="tag">React</span>
+<span class="tag">Node.js</span>
+<span class="tag">IA Generativa</span>
+<span class="tag">WhatsApp API</span>
+<span class="tag">MongoDB</span>
+<span class="tag">REST API</span>
+</div>
+<a href="#" class="btn btn-outline-primary mt-3">Em Desenvolvimento</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="projects" class="py-5">
+<div class="container">
+<div class="section-title">
+<h2>Projetos Recentes</h2>
+<p class="lead">Alguns dos meus trabalhos mais recentes</p>
+</div>
+
+<div class="row g-4">
+<div class="col-md-6 col-lg-4">
+<div class="project-card">
+<div class="project-img">
+<img src="imagem/image.01.png" alt="Calculadora">
+</div>
+<div class="project-content">
+<h3>Calculadora Interativa</h3>
+<p>Uma calculadora funcional desenvolvida com HTML, CSS e JavaScript puro, com interface responsiva e design moderno.</p>
+<div class="project-tags">
+<span class="tag">HTML</span>
+<span class="tag">CSS</span>
+<span class="tag">JavaScript</span>
+</div>
+<a href="https://calculadorasb.vercel.app/" class="btn btn-outline-primary mt-auto align-self-start" target="_blank">Ver Projeto</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+<div class="project-card">
+<div class="project-img">
+<img src="imagem/projet.png" alt="Portfólio">
+</div>
+<div class="project-content">
+<h3>Portfólio Pessoal</h3>
+<p>Site pessoal desenvolvido para apresentar habilidades, experiência e projetos de forma profissional e criativa.</p>
+<div class="project-tags">
+<span class="tag">HTML</span>
+<span class="tag">CSS</span>
+<span class="tag">Next.js</span>
+<span class="tag">JavaScript</span>
+</div>
+<a href="https://nextjs-portifolio-eosin.vercel.app" class="btn btn-outline-primary mt-auto align-self-start" target="_blank">Ver Projeto</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+<div class="project-card">
+<div class="project-img">
+<img src="imagem/image4.png" alt="Motopopa">
+</div>
+<div class="project-content">
+<h3>Site Motopopa</h3>
+<p>Landing page desenvolvida para uma empresa de motopeças, com design responsivo e otimizado para conversão.</p>
+<div class="project-tags">
+<span class="tag">HTML</span>
+<span class="tag">CSS</span>
+<span class="tag">JavaScript</span>
+<span class="tag">Bootstrap</span>
+</div>
+<a href="https://motopopa.vercel.app/" class="btn btn-outline-primary mt-auto align-self-start" target="_blank">Ver Projeto</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="text-center mt-5">
+<a href="https://github.com/anavatrim" class="btn btn-primary" target="_blank">
+<i class="fab fa-github me-2"></i> Ver Mais Projetos no GitHub
+</a>
+</div>
+</div>
+</section>
+
+<section id="contact" class="py-5 bg-light">
+<div class="container">
+<div class="section-title">
+<h2>Entre em Contato</h2>
+<p class="lead">Vamos trabalhar juntos!</p>
+</div>
+
+<div class="row g-4">
+<div class="col-lg-5">
+<div class="contact-info">
+<div class="contact-item">
+<div class="contact-icon">
+<i class="fas fa-envelope"></i>
+</div>
+<div class="contact-text">
+<h4>Email</h4>
+<a href="mailto:anavatrim@hotmail.com">anavatrim@hotmail.com</a>
+</div>
+</div>
+
+<div class="contact-item">
+<div class="contact-icon">
+<i class="fas fa-phone"></i>
+</div>
+<div class="contact-text">
+<h4>Telefone</h4>
+<a href="tel:+5544998984507">(44) 99898-4507</a>
+</div>
+</div>
+
+<div class="contact-item">
+<div class="contact-icon">
+<i class="fab fa-whatsapp"></i>
+</div>
+<div class="contact-text">
+<h4>WhatsApp</h4>
+<a href="https://wa.me/5544998984507" target="_blank">Enviar mensagem</a>
+</div>
+</div>
+
+<div class="contact-item">
+<div class="contact-icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<div class="contact-text">
+<h4>Localização</h4>
+<p>Maringá, PR - Brasil</p>
+</div>
+</div>
+</div>
+
+<div class="social-links mt-5">
+<a href="https://github.com/anavatrim" class="social-link" target="_blank">
+<i class="fab fa-github"></i>
+</a>
+<a href="https://www.linkedin.com/" class="social-link" target="_blank">
+<i class="fab fa-linkedin-in"></i>
+</a>
+<a href="https://www.instagram.com/" class="social-link" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+</div>
+</div>
+
+<div class="col-lg-7">
+<form class="contact-form">
+<div class="row">
+<div class="col-md-6 mb-3">
+<input type="text" class="form-control" placeholder="Seu Nome" required>
+</div>
+<div class="col-md-6 mb-3">
+<input type="email" class="form-control" placeholder="Seu Email" required>
+</div>
+</div>
+<div class="mb-3">
+<input type="text" class="form-control" placeholder="Assunto" required>
+</div>
+<div class="mb-3">
+<textarea class="form-control" placeholder="Sua Mensagem" rows="5" required></textarea>
+</div>
+<button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+<div class="text-center">
+<h3>Ana Cláudia Vatrim</h3>
+<p class="mb-4">Desenvolvedora Full Stack | Designer UX/UI</p>
+<div class="social-links">
+<a href="https://github.com/anavatrim" class="social-link" target="_blank">
+<i class="fab fa-github"></i>
+</a>
+<a href="https://www.linkedin.com/" class="social-link" target="_blank">
+<i class="fab fa-linkedin-in"></i>
+</a>
+<a href="https://www.instagram.com/" class="social-link" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+<a href="https://api.whatsapp.com/send?phone=5544998984507" class="social-link" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+</div>
+<div class="copyright">
+&copy; <span id="current-year">2024</span> Ana Cláudia Vatrim. Todos os direitos reservados.
+</div>
+</div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/script.js" defer></script>
 </body>
 </html>

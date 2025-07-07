@@ -78,4 +78,4 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICE
 
 ---
 
-Desenvolvido com ❤️ por [Ana Cláudia Vatrim](https://github.com/anavatrim)
+Desenvolvido por [Ana Cláudia Vatrim](https://github.com/anavatrim)
