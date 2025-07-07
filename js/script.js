@@ -65,12 +65,89 @@ function animateProgressBars() {
     });
 }
 
-// Initialize animations when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    // Animate progress bars
-    animateProgressBars();
+// Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Theme Toggle Functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = themeToggle.querySelector('i');
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
     
-    // Add animation to timeline items
+    // Get theme from localStorage or use system preference
+    let currentTheme = localStorage.getItem('theme') || (prefersDarkScheme.matches ? 'dark' : 'light');
+    
+    // Apply the saved theme
+    function applyTheme(theme) {
+        document.documentElement.setAttribute('data-bs-theme', theme);
+        document.body.setAttribute('data-theme', theme);
+        
+        // Update icon
+        if (theme === 'dark') {
+            themeIcon.classList.remove('bi-moon');
+            themeIcon.classList.add('bi-sun');
+        } else {
+            themeIcon.classList.remove('bi-sun');
+            themeIcon.classList.add('bi-moon');
+        }
+    }
+    
+    // Initialize theme
+    applyTheme(currentTheme);
+    
+    // Toggle theme on button click
+    themeToggle.addEventListener('click', function() {
+        const newTheme = document.documentElement.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('theme', newTheme);
+        applyTheme(newTheme);
+    });
+    
+    // Listen for system theme changes
+    prefersDarkScheme.addEventListener('change', e => {
+        if (!localStorage.getItem('theme')) {
+            const newTheme = e.matches ? 'dark' : 'light';
+            applyTheme(newTheme);
+        } else {
+            const storedTheme = localStorage.getItem('theme');
+            applyTheme(storedTheme);
+        }
+    });
+    
+    // Initialize animations
+    animateProgressBars();
+    initTimelineAnimations();
+    
+    // Initialize tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+    
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse.classList.contains('show')) {
+                    const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+                    bsCollapse.hide();
+                }
+            }
+        });
+    });
+});
+
+// Add animation to timeline items
+function initTimelineAnimations() {
     const timelineItems = document.querySelectorAll('.timeline-item');
     
     const timelineObserver = new IntersectionObserver((entries) => {
@@ -96,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         timelineObserver.observe(item);
     });
-});
+}
 
 // Form submission handling
 const contactForm = document.querySelector('.contact-form');
